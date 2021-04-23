@@ -37,7 +37,8 @@
                 for(var i=0;i<len;i++){
                     for(var j=0;j<len;j++){
                         if(tempWord.charAt(i)==realWord.charAt(j)){
-                            bull=bull+1
+                            if(tempWord.charAt(i)!=realWord.charAt(i)){
+                            bull=bull+1}
                         }
                     }
                 }
